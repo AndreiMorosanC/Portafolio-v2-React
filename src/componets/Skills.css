@@ -1,0 +1,121 @@
+#Title-h1{
+    padding-top: 1rem;
+    font-size: 6rem;
+    color: red;
+    text-align: center;
+    width: 20rem;
+}
+#Skill-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.container-content-skill{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-top-left-radius:10% ;
+    border-top-right-radius:10% ;
+    
+}
+
+.Skills-img{
+    width: 15rem;
+    height: 15rem;
+    border-top-left-radius:10% ;
+    border-top-right-radius:10% ;
+    background-color: white;
+}
+.Skills-text{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+.Skill-container-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    gap: 10px ;
+    width: 50rem;
+    height: 40rem;
+    flex-wrap: wrap;
+    
+  }
+  .Skill-container-Tittle{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .Skill-container-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  
+}
+
+@media screen and (max-width: 600px){
+    #Title-h1{
+        padding-top: 0;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .Skills-img{
+        width: 5em;
+        height: 5rem;
+    }
+    .container-content-skill{
+        width: 5.6rem;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+     
+    }
+    .Skills-text{
+        font-size: small;
+    }
+    .Skill-container-items{
+        padding-left:0;
+        padding-right:0;
+        padding-top: 0;
+        gap: 5px ;
+        width: 20rem;
+        height: auto;
+        
+    }
+}
+@media screen and (min-width:768px  ){
+    .Skills-img{
+        width: 7em;
+        height: 7rem;
+    }
+    .Skill-container-items{
+        padding-left:0;
+        padding-right:0;
+        padding-top: 0;
+        gap: 5px ;
+        width: 35rem;
+        height: auto;
+        
+    }
+    .container-content-skill{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #Title-h1{
+        padding-right: 0;
+        padding-bottom: 3rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width:1024px){
+    .Skills-img{
+        border-top-left-radius:10% ;
+        border-top-right-radius:10% ;
+    }
+}
