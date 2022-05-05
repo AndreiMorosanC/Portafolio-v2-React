@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
 import "./HeadBar.css"
-import Logo from "./Logo-portafolio.png"
+
 const HeadBar = ()=>{
  
     const [changeclass , setChangeClass] = useState(true)

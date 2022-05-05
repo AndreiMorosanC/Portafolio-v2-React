@@ -29,9 +29,10 @@
 }
 @media screen and (min-width:768px  ){
     .aboutme-container{
-        width: auto;
+        width: 29rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        align-self: center;
     }
     #aboutme-Tittle{
         padding-bottom: 10px;
@@ -43,10 +44,28 @@
         padding-bottom: 4rem;
     }
     
-    .aboutme-Para{
-       width: 40rem;
-       text-align: center;
-       padding-left: 2rem;
+    .aboutme-container{
+        width: 25rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
-
+    #aboutme-Tittle{
+        padding-bottom: 10px;
+        width: 25rem;
+    }
+    .aboutme-Para{
+        width: 15rem;
+    }
+}
+@media screen and (min-width:1440px){
+    .aboutme-container{
+        width: 35rem;
+    }
+    #aboutme-Tittle{
+        width: 35rem;
+    }
+    .aboutme-Para{
+        width: 34rem;
+        font-size: 1.25rem;   
+    }
 }

@@ -1,0 +1,111 @@
+.Contact-main-container{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact-tittle{
+    width: 37rem;
+    color: red;
+    font-size: 4rem;
+    align-self: center;
+    text-align: center;
+}
+.container-contact{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.container-contact-linkedin{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-right: 1rem; 
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.5) 10%, transparent 10%),
+    linear-gradient(65deg, transparent 70%, rgba(255, 0, 0, 0.5) 70%),
+    linear-gradient(15deg, rgba(255, 17, 0, 0.5) 80%, transparent 80%),
+    linear-gradient(25deg, rgba(255, 0, 0, 0.5) 30%, transparent 30%),
+    linear-gradient(-35deg, rgba(255, 0, 0, 0.5) 50%, transparent 50%),
+    rgba(255, 0, 0, 0.5);
+    border-radius: 10%;
+    padding-left: 7px;
+    text-decoration: none;
+    
+
+    
+}
+.container-contact-social-main{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    justify-content: center;
+    
+    
+}
+.logo-img{
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+}
+#linkedin-para{
+    text-align: center;
+    align-self: center;
+    color: whitesmoke;
+    padding-left: 4px;
+}
+a{
+    text-decoration: none;
+}
+.container-contact-form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 20rem;
+    gap: 10px;
+}
+.container-contact-form-main{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+   align-self: center;
+   padding-right: 8rem;
+
+}
+#form-email-titlle{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contact-form-input{
+    height: 2rem;
+}
+
+
+@media screen and (max-width: 600px){
+    .Contact-main-container{
+        padding-top: 5rem;
+    }
+    #contact-tittle{
+        width: 20rem;
+        font-size:2rem ;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .container-contact-form-main{
+        align-self: center;
+        width: 20rem;
+        padding-right: 0;
+    }
+}
+@media screen and (min-width:768px  ){
+    .container-contact-form-main{
+        padding-right: 0;
+    }
+}

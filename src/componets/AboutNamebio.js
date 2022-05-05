@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutNamebio.css"
-import ScrollDown from "./scrolldown.png"
+
 const AboutNameBio= ()=>{
     return(
         <div className="main-cointaner-About-item">
