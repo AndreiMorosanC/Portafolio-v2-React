@@ -1,5 +1,6 @@
 import React, {useRef, useState} from "react";
 import "./HeadBar.css"
+import { Link } from "react-scroll";
 
 const HeadBar = ()=>{
  
@@ -11,9 +12,29 @@ const HeadBar = ()=>{
                 <a href="/" className="Logo-item-a"><p className="Logo-item-Text">andreimorosan.com</p></a>
                     <nav>
                         <ul className="desktop-menu">
-                            <li><a href="/Skills">Skills</a></li>
-                            <li><a href="/Proyects">Proyects</a></li>
-                            <li><a href="/Contact">Contact</a></li>
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to="skills-aboutme"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-50}
+                                        duration={500}>
+                                        SKILLS
+                                    </Link>
+                            </li>
+                            <li>PROJECTS</li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}>
+                                    CONTACT
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                     <div id="hamburger-icon" className={changeclass ? "hidden" : "open"} onClick={()=> setChangeClass(!changeclass)}>
@@ -23,9 +44,29 @@ const HeadBar = ()=>{
                     </div>
             </header>
             <ul className={changeclass ? "hidden" : "mobile-menu"}>
-                <li><a href="/Skills">Skills</a></li>
-                <li><a href="/Proyects">Proyects</a></li>
-                <li><a href="/Contact">Contact</a></li>
+                <li>
+                <Link
+                    activeClass="active"
+                    to="skills-aboutme"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}>
+                    SKILLS
+                </Link>
+                </li>
+                <li>PROJECTS</li>
+                <li>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}>
+                    CONTACT
+                </Link>
+                </li>
             </ul>
         </div> 
     )

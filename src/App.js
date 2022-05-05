@@ -10,14 +10,18 @@ import Contact from './componets/Contact';
 
 function App() {
   return (
-    <div className="Main-container">
+    <div className="Main-container" >
       <HeadBar/>
-      <AboutNameBio/>
-      <div className='Main-Skill-container'>
+      <div>
+        <AboutNameBio/>
+      </div>
+      <div className='Main-Skill-container' id='skills-aboutme'>
         <AboutMe/>
         <Skills/>
       </div>
-      <Contact/>
+      <div id='contact'>
+        <Contact/>
+      </div>
   </div>
   );
 }
